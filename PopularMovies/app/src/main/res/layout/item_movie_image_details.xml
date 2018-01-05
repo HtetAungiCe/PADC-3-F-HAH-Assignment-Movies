@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_trailer"
+        android:layout_margin="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack">
+
+        <ImageView
+            android:id="@+id/iv_movie_trailer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@id/tv_movie_duration"
+            android:layout_below="@id/tv_movie_duration"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bgimage" />
+
+        <TextView
+            android:id="@+id/lbl_trailer_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/iv_movie_trailer"
+            android:text="Release Trailer"
+            android:textColor="@color/fullWhite"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/iv_play_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_play_circle_outline_black_80dp" />
+        <TextView
+            android:id="@+id/lbl_trailer_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trailer"
+            android:textColor="@color/fullWhite"
+            android:textSize="16dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

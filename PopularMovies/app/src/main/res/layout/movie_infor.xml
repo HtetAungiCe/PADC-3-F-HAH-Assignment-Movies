@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_movie_infor"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dp"
+    android:layout_height="200dp"
+    android:fitsSystemWindows="true"
+    android:layout_alignLeft="@id/title_for_movie"
+    android:layout_below="@id/title_for_movie">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/sv_text_for_movie_image"
+        android:layout_width="170dp"
+        android:layout_height="200dp"
+        android:fitsSystemWindows="true"
+        android:layout_alignLeft="@id/title_for_movie"
+        android:layout_below="@id/title_for_movie">
+
+        <TextView
+            android:lineSpacingMultiplier="1.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_text_for_movie"
+            android:textColor="@color/fullWhite"
+            android:textSize="12dp" />
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>

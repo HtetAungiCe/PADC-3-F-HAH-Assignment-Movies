@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    android:id="@+id/cv_movies_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:foreground="@drawable/item_ripple"
+    android:elevation="4dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_popular_movies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_black_panther"
+            android:layout_width="145dp"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/blackpanther" />
+
+        <TextView
+            android:id="@+id/tv_black_panther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/iv_black_panther"
+            android:text="Black Panther"
+            android:textColor="@color/colorBlack" />
+
+        <FrameLayout
+            android:id="@+id/fl_heart_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_favorite_red_24dp" />
+
+            <TextView
+                android:id="@+id/tv_fav_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/iv_black_panther"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:text="7.2"
+                android:textColor="@color/fullWhite" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_black_panther"
+            android:layout_below="@id/tv_black_panther"
+            android:layout_marginTop="4dp"
+            android:text="@string/text"
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_type"
+            android:layout_below="@id/tv_type"
+            android:layout_marginTop="4dp"
+            android:text="Current Popularity"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp" />
+        <RatingBar
+            android:id="@+id/rb_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="4.5"
+            android:stepSize="0.5"
+            android:layout_alignLeft="@id/tv_popular"
+            android:layout_below="@id/tv_popular"
+            style="?android:attr/ratingBarStyleSmall" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@id/iv_black_panther"
+            android:layout_alignParentRight="true"
+            android:layout_margin="4dp"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="More Overview"
+            android:textAllCaps="false"
+            android:textColor="@color/fullWhite" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_black_panther"
+            android:layout_alignRight="@id/iv_black_panther"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/ic_crop_free_white_24dp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
